@@ -1,0 +1,12 @@
+{
+    "name": "Bluestack assignment",
+    "database_name": "bluestack",
+    "collection_name": "records",
+    "bot_token": "<bot token>",
+    "google_search_url": "https://www.googleapis.com/customsearch/v1",
+    "google_api_key": "<google api key>",
+    "google_cx": "<custom search engine id>",
+    "google_result_limit": 5,
+    "recent_result_limit": 5,
+    "http_client_timeout": 10000
+}
