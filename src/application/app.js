@@ -1,4 +1,4 @@
-import { Client, Message } from 'discord.js';
+import { Client } from 'discord.js';
 import config from 'config';
 import Commands from '../commands/commands'
 
@@ -7,6 +7,7 @@ const main = () => {
     const bot = new Client();
     const PREFIX = '!';
     const token = config.get('bot_token');
+    console.log(token);
     
     bot.on('ready', () => {
         console.log('This bot is online');
@@ -37,7 +38,9 @@ const main = () => {
         }
     })
 
-    bot.login(token);
+    bot.login(token).catch(error => {
+        console.log("Failed to login", error);
+    });
 }
 
 export default main;
