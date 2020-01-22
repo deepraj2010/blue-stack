@@ -19,4 +19,5 @@
 4. No unit test coverage taken care of.
 5. Url for joining the bot : https://discord.gg/p5GckAN
 6. Git location for code: https://github.com/deepraj2010/blue-stack.git
-7. Have fun.
+7. I dont appreciate writing too many comments in code as I belive code written should be self explainatory.
+
