@@ -14,7 +14,11 @@ class Repo {
         let regex = new RegExp(string, 'i');
         return Schema.find({
             'query': regex
-        }).select('query -_id').limit(config.get('recent_result_limit')).exec();
+        }).sort({
+            created: -1
+        }).select('query -_id').limit(
+            config.get('recent_result_limit')
+        ).exec();
     }
 }
 
